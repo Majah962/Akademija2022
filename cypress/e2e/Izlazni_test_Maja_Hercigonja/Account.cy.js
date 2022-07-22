@@ -10,7 +10,7 @@ describe("Testira registraciju", () => {
         cy.get("#SubmitCreate").click();
         //unos podataka za registraciju
         cy.wait(3000);
-        //cy.get("#id_gender1").click();  
+        //cy.get("#id_gender1").click();  id_gender1--> musko, id_gender2-->zensko
         cy.get("#customer_firstname").type('ivan');
         cy.get("#customer_lastname").type('Ivić');
         cy.get("#passwd").type('12345');
